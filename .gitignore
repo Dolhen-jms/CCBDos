@@ -1,0 +1,16 @@
+#.gitignore
+# Secret & réglage locaux
+mkosie.key
+mkosi.cert
+mkosi.local.conf
+mkosi.crdentials/
+*.gpg
+*.pem
+
+# Artefact de build
+mkosi.output/
+mkosi.cache/
+mkos.tools/
+mkosi.tools.manifest
+mkosi.version
+logs/
