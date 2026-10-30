@@ -1,0 +1,6 @@
+# DHCP sur toutes les interfaces ethernet (réseau libvirt "default" en dev)
+[Match]
+Type=ether
+
+[Network]
+DHCP=yes

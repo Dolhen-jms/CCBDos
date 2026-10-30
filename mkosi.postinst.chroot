@@ -1,0 +1,8 @@
+#!/bin/bash
+# Services à démarrer au boot (exécuté dans l'image, après installation des paquets)
+set -euo pipefail
+systemctl enable systemd-networkd.service systemd-resolved.service ssh.service
+
+# Langues proposées par systemd-firstboot (en plus de C.UTF-8)
+sed -i -E 's/^# *((fr_FR|en_US)\.UTF-8 UTF-8)/\1/' /etc/locale.gen
+locale-gen
