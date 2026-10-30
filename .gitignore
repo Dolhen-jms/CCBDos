@@ -14,3 +14,4 @@ mkosi.tools/
 mkosi.tools.manifest
 mkosi.version
 logs/
+.mkosi-private/
